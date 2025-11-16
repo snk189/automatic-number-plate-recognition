@@ -1,0 +1,7 @@
+# Ignore image files (optional)
+*.jpg
+*.png
+
+# Python cache
+__pycache__/
+*.pyc
