@@ -15,3 +15,6 @@ pip install -r requirements.txt
 python anpr.py
 
 Detected number plates will be displayed and saved to an output file.
+
+Note: Demo image removed to protect privacy. Use any car image to test.
+
