@@ -3,7 +3,7 @@ import cv2
 import re
 
 # Path to your car image
-IMAGE_PATH = r"C:\Users\RAMAKRISHNA\OneDrive\Desktop\ANPR_project\car.jpg"
+IMAGE_PATH = "car.jpg"
 # Read the image
 image = cv2.imread(IMAGE_PATH)
 if image is None:
@@ -39,8 +39,9 @@ if detected_plate:
     cv2.imshow("Number Plate Detected", image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-    OUTPUT_PATH = r"C:\Users\RAMAKRISHNA\OneDrive\Desktop\ANPR_project\car_plate_detected.jpg"
+    OUTPUT_PATH = "car_plate_detected.jpg"
     cv2.imwrite(OUTPUT_PATH, image)
     print(f"Output image saved at {OUTPUT_PATH}")
 else:
     print("No number plate detected")
+
